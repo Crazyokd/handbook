@@ -1,0 +1,9 @@
+{
+    "java.project.referencedLibraries": [
+        "WEB-INF/lib/**/*.jar",
+        
+        //设置servlet-api.jar包路径  |  请将下面的目录修改为自己电脑上的相应目录
+        "D:\\ProgramFiles2\\Tomcat\\apache-tomcat-8.0.50\\lib\\servlet-api.jar"
+    ],
+    // "java.project.outputPath": "WEB-INF\\classes"
+}
