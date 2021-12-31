@@ -17,13 +17,25 @@
     </welcome-file-list>
 
     <servlet>
-        <servlet-name>HelloServlet</servlet-name>
-        <servlet-class>pkg.handbook.HelloServlet</servlet-class>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>pkg.handbook.service.LoginServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>HelloServlet</servlet-name>
+        <servlet-name>LoginServlet</servlet-name>
         <!-- "/"表示http://ip:port/工程路径 -->
-        <url-pattern>/hello-servlet</url-pattern>
+        <url-pattern>/login-servlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>pkg.handbook.service.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <!-- "/"表示http://ip:port/工程路径 -->
+        <url-pattern>/register-servlet</url-pattern>
     </servlet-mapping>
 </web-app>
