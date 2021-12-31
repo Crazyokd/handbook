@@ -13,7 +13,8 @@ class LauncherActivity : AppCompatActivity() {
             try {
                 sleep(3000)
                 Intent()
-                val intent = Intent(applicationContext,MainActivity::class.java)
+//                val intent = Intent(applicationContext,MainActivity::class.java)
+                val intent = Intent(applicationContext,LoginActivity::class.java)
                 startActivity(intent)
                 finish()
             }
