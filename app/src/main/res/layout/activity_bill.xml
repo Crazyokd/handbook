@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="#00FF7F">
+
+    <com.example.handbook.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000"
+           android:layout_marginLeft="10dp"
+            android:text="交易方式："/>
+
+        <TextView
+            android:id="@+id/exchange_method_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="交易金额："/>
+
+        <TextView
+            android:id="@+id/exchange_money_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="交易类型："/>
+
+        <TextView
+            android:id="@+id/exchange_ctgr_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="交易时间："/>
+
+        <TextView
+            android:id="@+id/exchange_time_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:text=""/>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="交易备注："/>
+
+    <EditText
+        android:id="@+id/exchange_comment_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text=""/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+        <Button
+            android:id="@+id/delete_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="删除"
+            android:background="#808080"
+            android:textColor="#000"
+            android:textSize="24sp"
+            />
+        <Button
+            android:id="@+id/store_bill_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="保存"
+            android:background="#808080"
+            android:textColor="#000"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+</LinearLayout>

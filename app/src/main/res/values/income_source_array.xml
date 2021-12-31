@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="income_source_array">
+        <item>其他</item>
+        <item>工资薪水</item>
+        <item>基金股票</item>
+        <item>被动收入</item>
+        <item>兼职打工</item>
+    </string-array>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="expense_source_array">
+        <item>其他</item>
+        <item>零食饮料</item>
+        <item>学校饮食</item>
+        <item>外出娱乐</item>
+        <item>学习用品</item>
+    </string-array>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.handbook.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/head_layout"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="1dp"
+        />
+<include layout="@layout/first_middle_layout"/>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="1dp"
+        />
+<include layout="@layout/bill_title_layout"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/billList_main_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
