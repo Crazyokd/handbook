@@ -53,7 +53,7 @@ open class BillAdapter(val billList:List<Bill>):
             holder.billMoney.text="￥-"+bill.money.toString()
         }
         holder.billTime.text=bill.calendar
-        holder.billLaber.text="标签："+bill.laber
+        holder.billLaber.text="标签："+bill.label
         holder.billComment.text="备注："+bill.comment
     }
 

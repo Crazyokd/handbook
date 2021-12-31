@@ -28,7 +28,7 @@ class BillActivity : AppCompatActivity() {
         val money:TextView=findViewById(R.id.exchange_money_tv)
         money.text=BillList.bl[position].money.toString()
         val ctgr:TextView=findViewById(R.id.exchange_ctgr_tv)
-        ctgr.text=BillList.bl[position].laber
+        ctgr.text=BillList.bl[position].label
         val time:TextView=findViewById(R.id.exchange_time_tv)
         time.text=BillList.bl[position].calendar
         val comment:TextView=findViewById(R.id.exchange_comment_et)
