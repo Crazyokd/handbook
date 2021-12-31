@@ -77,6 +77,10 @@
             android:textStyle="bold"
             android:text="还没有账号？点击注册"
             />
+        <TextView
+            android:id="@+id/test_tv"
+            android:text="测试"
+            />
 
     </TableLayout>
 

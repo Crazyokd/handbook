@@ -8,11 +8,11 @@ import pkg.handbook.domain.User;
 import pkg.handbook.utils.JdbcUtils;
 
 public class UserDaoImpl implements UserDao{
-	public void add(User user){
+	public void add(String username, String password){
 		try{
 			QueryRunner runner = new QueryRunner(JdbcUtils.getDataSource());
 			String sql = "insert into user(username,password) values(?,?)";
-			Object params[] = {user.getUsername(), user.getPassword()};
+			Object params[] = {username, password};
 			runner.update(sql, params);
 		} catch(Exception e){
 			throw new RuntimeException(e);
