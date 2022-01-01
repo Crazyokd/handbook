@@ -17,7 +17,7 @@ public class JdbcUtils {
 		} catch (PropertyVetoException e) {
 			e.printStackTrace();
 		}
-		ds.setJdbcUrl("jdbc:mysql://localhost:3306/handbook");
+		ds.setJdbcUrl("jdbc:mysql://localhost:3306/handbook?characterEncoding=utf8");
 		ds.setUser("root");
 		ds.setPassword("011010");
 		ds.setAcquireIncrement(5);
