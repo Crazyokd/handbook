@@ -1,20 +1,12 @@
 package pkg.handbook.domain;
 
 public class Bill {
-    private int id;
     private double money;
     private String label;
     private String comment;
     private String calendar;
     private int ctgr;
-    private int userid;
 
-    public int getId(){
-        return this.id;
-    }
-    public void setId(int id){
-        this.id = id;
-    }
 
     public double getMoney(){
         return this.money;
@@ -51,10 +43,4 @@ public class Bill {
         this.ctgr = ctgr;
     }
 
-    public int getUserid(){
-        return this.userid;
-    }
-    public void setUserid(int userid){
-        this.userid = userid;
-    }
 }
