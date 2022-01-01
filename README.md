@@ -12,8 +12,8 @@
 - [handbook.sql](handbook.sql)
 - [MainActivity.kt](app/src/main/java/com/example/handbook/MainActivity.kt)————访问后端的url需要适当修改
 ## TODO
-- [] 修改写数据逻辑
-- [] 安卓代码文件采用更加规范的包管理
+- [ ] 修改写数据逻辑
+- [ ] 安卓代码文件采用更加规范的包管理
 ## 参考
 - [Crazyokd/JW_VSC-Template](https://github.com/Crazyokd/JW_VSC-Template)
 - [Crazyokd/cart](https://github.com/Crazyokd/cart)
