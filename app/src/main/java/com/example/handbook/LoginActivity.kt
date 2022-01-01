@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -44,7 +45,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         registerTv.setOnClickListener(this)
 
         Log.d("LoginActivity", "onCreate")
-
     }
 
     override fun onClick(v: View?) {
@@ -66,8 +66,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun showErrorMessage() {
         runOnUiThread {
-            val testTv: TextView = findViewById(R.id.test_tv)
-            testTv.text = "您的账号或密码错误"
+            Toast.makeText(this, "您的账号或密码错误", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -85,8 +84,9 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                 // 对返回的数据进行判断处理
                 if (responseData.equals("success")) {
                     val intent = Intent(this, MainActivity::class.java)
-                    intent.putExtra("username", username.text)
+                    intent.putExtra("username", username.text.toString())
                     startActivityForResult(intent, 2)
+                    finish()
                 } else {
                     showErrorMessage()
                 }
