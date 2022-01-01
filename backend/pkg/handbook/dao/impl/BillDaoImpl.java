@@ -25,9 +25,10 @@ public class BillDaoImpl implements BillDao{
 
     public void writeData(List<Bill> bills, String user_name){
         QueryRunner runner = new QueryRunner(JdbcUtils.getDataSource());
+        
 
         //删除该用户上一次的“购物车”
-        deleteData(user_name);
+        // deleteData(user_name);
         
         //插入一张bill
         String sql = "insert into bill(`money`,`label`,`comment`,`calendar`,`ctgr`,`user_name`) values(?,?,?,?,?,?);";
